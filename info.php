@@ -3,7 +3,7 @@
 $info = array(
 	'name' => t('HTTPS'),
 	'description' => t('Управляет протоколами работы сайта(HTTP/HTTPS)'),
-	'version' => '0.3',
+	'version' => '0.4',
 	'author' => 'Nikita A Menkovich',
 	'plugin_url' => 'http://libc6.org/',
 	'author_url' => 'http://libc6.org/',

@@ -74,6 +74,7 @@ function https_init()
         else $request_uri =  $_SERVER['REQUEST_URI'];
     //fallback
     if (mso_segment(1) == 'admin' && mso_segment(2) == 'plugin_options' && mso_segment(3) == 'https') $redirect = false;
+    if (preg_match("!feedburner|feedvalidator!i", $_SERVER['HTTP_USER_AGENT'])) $redirect = false;
 
     if ($redirect && $https_on == false) header('Location: https://' . $_SERVER['HTTP_HOST'] . $request_uri);
 }
